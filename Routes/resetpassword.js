@@ -1,6 +1,7 @@
 import express from 'express';
 import jwt from 'jsonwebtoken';
 import userModel from '../Db_utils/models.js';
+import bcrypt from 'bcrypt'
 
 const resetpasswordrouter = express.Router();
 
@@ -23,3 +24,5 @@ resetpasswordrouter.post('/', async (req,res)=>{
     }
 
 })
+
+export default resetpasswordrouter;
