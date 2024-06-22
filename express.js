@@ -8,19 +8,13 @@ import forgetpasswordRouter from './Routes/forgetpassword.js';
 import verifypassword from './Routes/verifypassword.js';
 import resetpasswordrouter from './Routes/resetpassword.js';
 
-
-
-
-
-
-
-
-
 //express server creation
 const server = express();
 
 //middelware
 server.use(express.json());
+
+
 //cors middleware
 server.use(cors());
 
